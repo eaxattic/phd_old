@@ -1,0 +1,29 @@
+This is README file for PhD work by Ekrem Aksoy
+(c) 2010
+Decentralized Data Centric Middleware for Heterogeneous Environments (Robots/Agents)
+Heterogeneous Robotic Middleware in short :) or HRM
+
+HRM is a middleware for simplifying multi robot/agent application development. Also, the environment is modeled as totally decentralized and data centric.
+Therefore there are very large variety of application addressed. Moreover, with its Policy based communication reliability mechanisms, it is assured that if a Task T
+can be accomplished by any robot in the Active Environmet (i.e. LOS of Primary Coordinator), it is done, of course Policies are met.
+
+There are three roles in environment: 
+
+1) Primary Coordinator
+2) Shadow Coordinator
+3) Task Member
+
+PC, SC and all TMs form a "Task Force". The Task Force is assigned a Task Board. The TMs communicate thru this board during Task Progress.
+
+In HRM Environment these are the assumptions:
+
+1) Any Agent could be PC for a Task, and PC is the agent that the Task is defined from. (e.g. an agent who acquires the Task)
+2) Any Agent could be SC in order to keep Task Repositories alive.
+3) There is no central, dedicated or assigned role for either PC or SC or TM
+4) Comm is totally decentralized, there is no single point of failure.
+5) LOS Comm can be lost in anytime. BLOS comm is accomplished by proxies under this assumption
+6) An Agent could be in any or all of the roles at the sametime. e.g. an agent could be PC in Task Force#1 where SC in Task Force#2 and TM in Task Force#3
+7) An Agent could be assigned only in one Task Force as a TM.
+8) Task Forces identified by PCs. So there are several Task Forces identified by a PC since a Task could be defined from a PC and each Task could require different capabilities.
+
+
