@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<generic>
+		<agent_name>TEST_AGENT</agent_name>
+	</generic>
+	<primary></primary>
+	<shadow></shadow>
+	<member></member>
+</config>
